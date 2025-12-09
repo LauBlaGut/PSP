@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.safa.hilosbotones.HelloController"
+      alignment="CENTER" spacing="20" prefWidth="380" prefHeight="340">
+
+    <Button fx:id="btnComenzar" text="Comenzar Proceso" prefWidth="180"/>
+
+    <HBox spacing="40" alignment="CENTER">
+        <VBox spacing="5" alignment="CENTER">
+            <Button fx:id="btnSuspender1" text="Suspender" prefWidth="100"/>
+            <Button fx:id="btnReanudar1" text="Reanudar" prefWidth="100"/>
+            <Label fx:id="lblEstado1" text="Estado: -" />
+            <TextField fx:id="txtHilo1" prefWidth="100"/>
+            <Label text="Hilo 1"/>
+        </VBox>
+
+        <VBox spacing="5" alignment="CENTER">
+            <Button fx:id="btnSuspender2" text="Suspender" prefWidth="100"/>
+            <Button fx:id="btnReanudar2" text="Reanudar" prefWidth="100"/>
+            <Label fx:id="lblEstado2" text="Estado: -" />
+            <TextField fx:id="txtHilo2" prefWidth="100"/>
+            <Label text="Hilo 2"/>
+        </VBox>
+    </HBox>
+
+    <Button fx:id="btnFinalizar" text="Finalizar Proceso" prefWidth="180"/>
+</VBox>
