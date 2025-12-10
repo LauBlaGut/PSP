@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.safa.granja.HelloController">
+
+    <!-- Panel superior: Controles de simulación -->
+    <top>
+        <ToolBar>
+            <Button text="Sembrar" onAction="#onSembrar" />
+            <Button text="Pausar" onAction="#onPausar" />
+            <Button text="Reiniciar" onAction="#onReiniciar" />
+            <Label text="Velocidad:" />
+            <Slider fx:id="velocidadSlider" min="1" max="10" value="5" />
+        </ToolBar>
+    </top>
+
+    <!-- Panel central: Granja -->
+    <center>
+        <GridPane fx:id="parcelasGrid" hgap="10" vgap="10" alignment="CENTER">
+            <!-- Las parcelas se agregarán dinámicamente desde el controlador -->
+        </GridPane>
+    </center>
+
+    <!-- Panel derecho: Opciones adicionales -->
+    <right>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Opciones de Riego" />
+            <Button text="Activar Aspersores" onAction="#onActivarAspersores" />
+            <Button text="Desactivar Aspersores" onAction="#onDesactivarAspersores" />
+        </VBox>
+    </right>
+
+    <!-- Panel inferior: Estado -->
+    <bottom>
+        <Label text="Estado: Listo" fx:id="estadoLabel" alignment="CENTER" />
+    </bottom>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.safa.carrera.HelloController"
+            prefWidth="1200" prefHeight="200">
+
+    <VBox spacing="20" alignment="CENTER" layoutX="20" layoutY="20">
+
+        <Label text="Carrera Liebre vs Tortuga"
+               style="-fx-font-size: 22; -fx-font-weight: bold;"/>
+
+        <GridPane fx:id="pistaGrid"
+                  hgap="2"
+                  vgap="2"
+                  alignment="CENTER"/>
+
+        <Label fx:id="estadoLabel"
+               style="-fx-font-size: 18;"/>
+
+        <Button text="Iniciar Carrera" onAction="#iniciarCarrera"/>
+
+    </VBox>
+
+</AnchorPane>
